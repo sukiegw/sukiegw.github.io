@@ -17,12 +17,17 @@
             line-height: 1.6;
         }
     </style>
+    <script type="module">
+        const t = a.innerText.replace("[at]", "@").replace("[dot]", ".");
+        a.innerText = t;
+        a.href = "mailto:" + t;
+    </script>
 </head>
 
 <body>
     <h1>Sukie Wilson</h1>
     <p>Sukie Wilson is a London-based writer, working around the slowed-time of chronic illness. Their work has been shortlisted for Spread The Word’s Early Career Bursary and the Alpine Fellowship prize, as well as being longlisted for New Writing North’s A Writing Chance. They are a multi-tasker by nature, so Sukie is currently working on both a collection of short stories and their first novel.</p>
-    <p>Contact Sukie for any work enquiries at <a href="mailto:madebysgw@protonmail.com">madebysgw@protonmail.com</a>.</p>
+    <p>Contact Sukie for any work enquiries at <a id="a">madebysgw[at]protonmail[dot]com</a>.</p>
 </body>
 
 </html>
